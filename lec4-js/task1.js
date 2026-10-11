@@ -1,10 +1,10 @@
 let userName=prompt("Enter your name:");
-let userAge=prompt("Enter your age:")
+let userAge=Number(prompt("Enter your age:"));
 
 let user={
 
-    name:userName,
-    age:Number(userAge),
-    hasAccess:Number(userAge) >20 ?true:false
+    name,
+    age,
+    hasAccess:age >20,
 };
 console.log(user);

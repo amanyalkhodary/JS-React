@@ -7,16 +7,39 @@ const users = [
     { name: "Eman", email: "eman@gmail.com", type: "user" },
     { name: "Mohammed", email: "mohammed@gmail.com", type: "admin" },
 ];
-let adminCount = 0;
-let userCount = 0;
 
-users.forEach((user) => {
-    if (user.type === "admin") {
-        userCount++;
-    } else if (user.type === "user") {
-        userCount++;
-    }
-});
+let usersCount = users.filter((user) => user.type == "User").length;
+
+
+let adminCount = users.filter((user) => user.type == "Admin").length;
+
+
+
+
 
 console.log("Admin Count:", adminCount);
 console.log("User Count:", userCount);
+
+
+
+
+
+
+
+
+
+
+// users.forEach((user) => {
+//     if (user.type === "admin") {
+//         userCount++;
+//     } else if (user.type === "user") {
+//         userCount++;
+//     }
+// });
+
+
+
+
+
+
+

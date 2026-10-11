@@ -10,10 +10,13 @@ const products = [
 products.forEach((product) => {
     if (product.rating > 3) {
         const starCount = Math.round(product.rating);
-        const stars = "*".repeat(starCount);
+        const stars = "⭐".repeat(starCount);
 
 
         console.log(`product:${product.name} | price:$${product.price} | Rating:${stars}`);
     }
 }
 );
+
+
+// ⭐⭐ 
