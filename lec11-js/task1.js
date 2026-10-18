@@ -77,7 +77,7 @@ function calculateAge(graves) {
             )
         ) {
             age--;
-        }
+        } 
 
         grave.age = age;
     });
