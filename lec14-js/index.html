@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فاتورتي</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-slate-100 p-5">
+  <main class="mx-auto max-w-lg rounded-2xl bg-white p-6 shadow-lg">
+
+    <h1 class="mb-5 text-center text-2xl font-bold text-blue-700">
+      فاتورتي 🧾
+    </h1>
+
+    <div id="products" class="space-y-3"></div>
+
+    <button id="addProduct"
+      class="mt-4 w-full rounded-lg bg-blue-600 p-3 text-white">
+      + إضافة منتج
+    </button>
+
+    <label class="mt-5 flex items-center gap-2">
+      <input type="checkbox" id="hasCoupon">
+      Have Coupon
+    </label>
+
+    <input id="coupon" type="text"
+      placeholder="كود الخصم ABC123"
+      class="mt-3 w-full rounded-lg border p-3">
+
+    <button id="createInvoice"
+      class="mt-3 w-full rounded-lg bg-emerald-600 p-3 text-white">
+      إنشاء فاتورة
+    </button>
+
+    <button id="closeBorder"
+      class="mt-3 w-full rounded-lg bg-rose-600 p-3 text-white">
+      سكر المعبر × 150%
+    </button>
+
+    <div id="invoice" class="mt-5 space-y-3"></div>
+
+  </main>
+</body>
+</html>
